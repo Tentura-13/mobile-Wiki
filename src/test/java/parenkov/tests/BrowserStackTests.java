@@ -1,6 +1,11 @@
 package parenkov.tests;
 
 import io.appium.java_client.MobileBy;
+import io.qameta.allure.AllureId;
+import io.qameta.allure.Feature;
+import io.qameta.allure.Owner;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
 import org.aeonbits.owner.ConfigFactory;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
@@ -14,9 +19,13 @@ import static com.codeborne.selenide.Selenide.$$;
 import static io.qameta.allure.Allure.step;
 
 @Tag("browserstack")
+@Owner("Fedor Parenkov")
 public class BrowserStackTests extends TestBase {
 
     @Test
+    @AllureId("6335")
+    @Feature("Search")
+    @Severity(SeverityLevel.CRITICAL)
     @DisplayName("Successful search")
     void searchTest() {
         step("Ввести поисковый запрос", () -> {
@@ -29,6 +38,9 @@ public class BrowserStackTests extends TestBase {
     }
 
     @Test
+    @AllureId("6336")
+    @Feature("Authorization")
+    @Severity(SeverityLevel.CRITICAL)
     @DisplayName("Successful login")
     void logInTest() {
 

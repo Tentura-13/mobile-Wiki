@@ -1,6 +1,11 @@
 package parenkov.tests;
 
 import io.appium.java_client.MobileBy;
+import io.qameta.allure.AllureId;
+import io.qameta.allure.Feature;
+import io.qameta.allure.Owner;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
@@ -10,9 +15,13 @@ import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.$$;
 import static io.qameta.allure.Allure.step;
 
+@Owner("Fedor Parenkov")
 public class AndroidTests extends TestBase {
 
     @Test
+    @AllureId("6337")
+    @Feature("Onboarding")
+    @Severity(SeverityLevel.NORMAL)
     @DisplayName("Passing onboarding screens")
     void onboardingTest() {
         step("Проверить корректность текста на первом экране", () ->
@@ -38,6 +47,9 @@ public class AndroidTests extends TestBase {
     }
 
     @Test
+    @AllureId("6338")
+    @Feature("Search")
+    @Severity(SeverityLevel.CRITICAL)
     @DisplayName("Successful search")
     void searchTest() {
         step("Кликнуть SKIP на онбординг экране", () ->
