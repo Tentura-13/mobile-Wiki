@@ -101,7 +101,7 @@ appActivity=org.wikipedia.main.MainActivity
 appPath=src/test/resources/app-alpha-universal-release.apk
 ```
 Видео теста на поиск:<br/><br/>
-![](src/test/resources/images/attachs/browserstack_test.gif)
+![](src/test/resources/images/attachs/emulator_test.gif)
 
 
 **Запуск на смартфоне**
@@ -122,7 +122,7 @@ appActivity=org.wikipedia.main.MainActivity
 appPath=src/test/resources/app-alpha-universal-release.apk
 ```
 Видео теста на прохождение onboarding страниц:<br/><br/>
-![](src/test/resources/images/attachs/browserstack_test.gif)
+![](src/test/resources/images/attachs/smartphone_test.gif)
 
 
 ---
