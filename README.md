@@ -139,3 +139,11 @@ appPath=src/test/resources/app-alpha-universal-release.apk
 ---
 ### [Задача](https://jira.autotests.cloud/browse/HOMEWORK-292) в таск-трекере Jira с данными, экспортированными из Allure TestOps
 ![](src/test/resources/images/screenshots/jira.png)
+
+---
+### Оповещения о статусе сборки в мессенджерах
+<img src="src/test/resources/images/logos/slack.svg" width="80" /><br/>
+![](src/test/resources/images/screenshots/slack_notice.png)
+---
+<img src="src/test/resources/images/logos/telegram.svg" width="100" /><br/>
+![](src/test/resources/images/screenshots/telegram_notice.png)
