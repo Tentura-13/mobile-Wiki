@@ -66,7 +66,7 @@ gradle clean test -DdeviceHost=selenoid
 ```
 Состав файла **selenoid.properties**:
 ```
-url=https://<username>:<password>@selenoid.autotests.cloud/wd/hub/
+url=https://<login>:<password>@selenoid.autotests.cloud/wd/hub/
 deviceName=android
 osVersion=8.1
 locale=en
