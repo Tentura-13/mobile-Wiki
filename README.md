@@ -31,7 +31,7 @@
 #### Конфигурационные данные для запуска тестов зачитываются из properties-файлов. Запуск тестов производится с использованием приведенных ниже консольных команд.<br/>
 
 ### Запуск тестов удаленно
-Для удаленного запуска автотестов сконфигурирована :arrow_right: **[job](https://jenkins.autotests.cloud/job/08-WakeUpTheo-mobile-Wiki/)** :arrow_left: в CI Jenkins.<br/>
+Для удаленного запуска автотестов сконфигурирована :arrow_right: **[job](https://jenkins.autotests.cloud/job/08-WakeUpTheo-mobile-Wiki/)** :arrow_left: в CI Jenkins. В Jenkins job добавлена интеграция с Allure Report и Allure TestOps, а также настроена расслылка оповещений о результатах выполнения тестов в мессенджеры Slack и Telegram.<br/>
 
 **Запуск на устройстве [Browserstack](https://www.browserstack.com/)**
 
@@ -66,7 +66,7 @@ gradle clean test -DdeviceHost=selenoid
 ```
 Состав файла **selenoid.properties**:
 ```
-url=https://<username>:<password>@selenoid.autotests.cloud/wd/hub/
+url=https://<login>:<password>@selenoid.autotests.cloud/wd/hub/
 deviceName=android
 osVersion=8.1
 locale=en
@@ -101,7 +101,7 @@ appActivity=org.wikipedia.main.MainActivity
 appPath=src/test/resources/app-alpha-universal-release.apk
 ```
 Видео теста на поиск:<br/><br/>
-![](src/test/resources/images/attachs/browserstack_test.gif)
+![](src/test/resources/images/attachs/emulator_test.gif)
 
 
 **Запуск на смартфоне**
@@ -122,10 +122,13 @@ appActivity=org.wikipedia.main.MainActivity
 appPath=src/test/resources/app-alpha-universal-release.apk
 ```
 Видео теста на прохождение onboarding страниц:<br/><br/>
-![](src/test/resources/images/attachs/browserstack_test.gif)
+![](src/test/resources/images/attachs/smartphone_test.gif)
 
 
 ---
+### Результаты выполнения тестов
+
+
 ### Отчет в Allure Report
 ![](src/test/resources/images/screenshots/allure_1.png)
 
