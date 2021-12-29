@@ -126,6 +126,9 @@ appPath=src/test/resources/app-alpha-universal-release.apk
 
 
 ---
+### Результаты выполнения тестов
+
+
 ### Отчет в Allure Report
 ![](src/test/resources/images/screenshots/allure_1.png)
 
