@@ -16,7 +16,7 @@ import static com.codeborne.selenide.Selenide.$$;
 import static io.qameta.allure.Allure.step;
 
 @Owner("Fedor Parenkov")
-public class AndroidTests extends TestBase {
+public class SelenoidAndLocalHostTests extends TestBase {
 
     @Test
     @AllureId("6337")

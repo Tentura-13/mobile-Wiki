@@ -10,7 +10,6 @@ repositories {
 def allureVersion = "2.16.1",
     selenideVersion = "5.24.4",
     junitVersion = "5.8.2",
-    aspectjweaverVersion = "1.9.7",
     appiumVersion = "7.6.0",
     ownerVersion = "1.0.12",
     restAssuredVersion = "4.4.0",
@@ -29,7 +28,6 @@ allure {
 
 dependencies {
     testImplementation(
-            "org.aspectj:aspectjweaver:$aspectjweaverVersion",
             "com.codeborne:selenide:$selenideVersion",
             "io.qameta.allure:allure-selenide:$allureVersion",
             "io.appium:java-client:$appiumVersion",

@@ -12,19 +12,19 @@
 - local real device.<br/>
 ---
 ### Использованный технологический стек
-<img src="src/test/resources/images/logos/java.svg" width="27" /> `Java` 
-<img src="src/test/resources/images/logos/selenide.svg" width="42" /> `Selenide` 
-<img src="src/test/resources/images/logos/junit.svg" width="33" /> `JUnit` - написание исходного кода;<br/>
-<img src="src/test/resources/images/logos/gradle.svg" width="35" height="35" /> `Gradle` - сборка проекта;<br/>
-<img src="src/test/resources/images/logos/jenkins.svg" width="35" height="35" /> `Jenkins` - конфигурация и запуск сборок;<br/>
-<img src="src/test/resources/images/logos/selenoid.svg" width="35" /> `Selenoid` 
-<img src="src/test/resources/images/logos/docker.svg" width="45" /> `Docker` - запуск автотестов удаленно в изолированных сессиях на билд-сервере;<br/>
-<img src="src/test/resources/images/logos/browserstack.svg" width="28" /> `BrowserStack` - запуск автотестов удаленно на реальном устройстве на сайте BrowserStack;<br/>
-<img src="src/test/resources/images/logos/appium.svg" width="27" /> `Appium`
-<img src="src/test/resources/images/logos/android.svg" width="60" /> `Android Virtual Device` - запуск автотестов локально на эмуляторе и реальном устройстве;<br/>
-<img src="src/test/resources/images/logos/allure.svg" width="28" /> `Allure Report` - формирование отчетности по итогам тестирования;<br/>
-<img src="src/test/resources/images/logos/allure_testops.svg" width="24.7" /> `Allure TestOps` - создание тестовой документации;<br/>
-<img src="src/test/resources/images/logos/jira.svg" width="30" /> `Jira` - создание задачи в таск-трекере.<br/>
+<img src="./images/logos/java.svg" width="27" /> `Java` 
+<img src="./images/logos/selenide.svg" width="42" /> `Selenide` 
+<img src="./images/logos/junit.svg" width="33" /> `JUnit` - написание исходного кода;<br/>
+<img src="./images/logos/gradle.svg" width="35" height="35" /> `Gradle` - сборка проекта;<br/>
+<img src="./images/logos/jenkins.svg" width="35" height="35" /> `Jenkins` - конфигурация и запуск сборок;<br/>
+<img src="./images/logos/selenoid.svg" width="35" /> `Selenoid` 
+<img src="./images/logos/docker.svg" width="45" /> `Docker` - запуск автотестов удаленно в изолированных сессиях на билд-сервере;<br/>
+<img src="./images/logos/browserstack.svg" width="28" /> `BrowserStack` - запуск автотестов удаленно на реальном устройстве на сайте BrowserStack;<br/>
+<img src="./images/logos/appium.svg" width="27" /> `Appium`
+<img src="./images/logos/android.svg" width="60" /> `Android Virtual Device` - запуск автотестов локально на эмуляторе и реальном устройстве;<br/>
+<img src="./images/logos/allure.svg" width="28" /> `Allure Report` - формирование отчетности по итогам тестирования;<br/>
+<img src="./images/logos/allure_testops.svg" width="24.7" /> `Allure TestOps` - создание тестовой документации;<br/>
+<img src="./images/logos/jira.svg" width="30" /> `Jira` - создание задачи в таск-трекере.<br/>
 
 
 ---
@@ -54,7 +54,7 @@ name=android_tests // значение для примера
 
 Для прохождения теста на авторизацию на устройстве Browserstack также необходим файл **credentials.properties**, который сформирован в конфигурации Jenkins job.<br/><br/>
 Видео теста на авторизацию:<br/><br/>
-![](src/test/resources/images/attachs/browserstack_test.gif)
+![](./images/attachs/browserstack_test.gif)
 <br/><br/>
 
 
@@ -77,7 +77,7 @@ appPath=https://github.com/wikimedia/apps-android-wikipedia/releases/download/la
 ```
 Видео теста на прохождение onboarding страниц:<br/>
 
-![](src/test/resources/images/attachs/selenoid_test.gif)
+![](./images/attachs/selenoid_test.gif)
 
 
 ---
@@ -101,7 +101,7 @@ appActivity=org.wikipedia.main.MainActivity
 appPath=src/test/resources/app-alpha-universal-release.apk
 ```
 Видео теста на поиск:<br/><br/>
-![](src/test/resources/images/attachs/emulator_test.gif)
+![](./images/attachs/emulator_test.gif)
 
 
 **Запуск на смартфоне**
@@ -122,7 +122,7 @@ appActivity=org.wikipedia.main.MainActivity
 appPath=src/test/resources/app-alpha-universal-release.apk
 ```
 Видео теста на прохождение onboarding страниц:<br/><br/>
-![](src/test/resources/images/attachs/smartphone_test.gif)
+![](./images/attachs/smartphone_test.gif)
 
 
 ---
@@ -130,23 +130,23 @@ appPath=src/test/resources/app-alpha-universal-release.apk
 
 
 ### Отчет в Allure Report
-![](src/test/resources/images/screenshots/allure_1.png)
+![](./images/screenshots/allure_1.png)
 
 
-![](src/test/resources/images/screenshots/allure_2.png)
+![](./images/screenshots/allure_2.png)
 
 ---
 ### Тестовая документация, сгенерированная в [Allure TestOps](https://allure.autotests.cloud/project/789/dashboards) по итогам прохождения тестов
-![](src/test/resources/images/screenshots/allure_3.png)
+![](./images/screenshots/allure_3.png)
 
 ---
 ### [Задача](https://jira.autotests.cloud/browse/HOMEWORK-292) в таск-трекере Jira с данными, экспортированными из Allure TestOps
-![](src/test/resources/images/screenshots/jira.png)
+![](./images/screenshots/jira.png)
 
 ---
 ### Оповещения о статусе сборки в мессенджерах
-<img src="src/test/resources/images/logos/slack.svg" width="80" /><br/>
-![](src/test/resources/images/screenshots/slack_notice.png)
+<img src="./images/logos/slack.svg" width="80" /><br/>
+![](./images/screenshots/slack_notice.png)
 ---
-<img src="src/test/resources/images/logos/telegram.svg" width="100" /><br/>
-![](src/test/resources/images/screenshots/telegram_notice.png)
+<img src="./images/logos/telegram.svg" width="100" /><br/>
+![](./images/screenshots/telegram_notice.png)
